@@ -1,0 +1,20 @@
+#!/bin/bash
+# Radio streamer
+
+station=$1
+cwd=$(pwd)
+. $cwd/streams
+
+if [ -z $station ]; then
+	printf "Usage: ./readio_streamer <station>\n\n"
+	printf "Available stations:\n"
+	for i in "${!stations[@]}"; do
+		echo " - $i "
+done | sort
+	
+exit
+fi
+
+stream=${stations[$1]}
+mplayer -playlist $stream
+
