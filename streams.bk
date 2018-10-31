@@ -1,0 +1,26 @@
+#!/bin/bash
+
+declare -A stations=(
+					 [Funradio (POP)]="http://stream.funradio.sk:8000/fun128.mp3.m3u"
+					 [HardbaseFM (Hardstyle)]="http://listen.hardbase.fm/dsl.pls"
+					 [Hitfm (POP)]="http://94.23.48.124:8000/listen.pls"
+					 [M2hit (POP)]="http://www.m2radio.fr/pls/m2hit.m3u"
+					 [Radio3fm (POP)]="http://icecast.omroep.nl/3fm-bb-mp3.m3u"
+					 [Skyradio (POP)]="http://provisioning.streamtheworld.com/pls/skyradio.pls"
+					 [PartyVibe (Techno)]="http://www.partyviberadio.com:8046/listen.pls?sid=1&t=.pls"
+					 [MoveThaHouse (Underground Techno)]="http://uk7.internet-radio.com:8000/listen.pls&t=.pls"
+					 [PulseEDM (Electro)]="http://pulseedm.cdnstream1.com:8124/1373_128.m3u&t=.pls"
+					 [HardTech (Hard Techno)]="http://schranz.in:8000/listen.pls?sid=1&t=.pls"
+					 [UKDance (Trance, House)]="http://uk2.internet-radio.com:8024/listen.pls&t=.pls"
+					 [UndergroundFM (Psy, Chill)]="http://uk6.internet-radio.com:8437/live.m3u&t=.pls"
+					 [HardWithStyle (Hardstyle)]="http://38.107.242.210:8228/listen.pls&t=.pls"
+					 [HardCoreNL (Hardcore)]="http://81.18.165.235:80/listen.pls&t=.pls"
+					 [HardstyleFM (Hardstyle)]="http://92.222.36.40:8000/listen.pls?sid=1&t=.pls"
+					 [PureNL (Hardcore, Darkcore)]="http://dutchcore.fm:8100/ultra_autodj.m3u&t=.pls"
+					 [TheMoC (Hardstyle, Techno)]="http://37.187.93.104:8190/listen.pls?sid=1&t=.pls"
+					 [HardWithStyle (Hardstyle)]="http://38.107.242.210:8228/listen.pls&t=.pls"
+)
+
+
+stream=${stations["Hitfm"]}
+echo $stream
