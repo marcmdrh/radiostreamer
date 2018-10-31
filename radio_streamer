@@ -10,7 +10,7 @@ if [ -z $station ]; then
 	printf "Available stations:\n"
 	for i in "${!stations[@]}"; do
 		echo " - $i "
-done
+done | sort
 	
 exit
 fi
