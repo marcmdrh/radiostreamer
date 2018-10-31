@@ -15,6 +15,11 @@ done | sort
 exit
 fi
 
+if [[ ! " ${!stations[@]} " =~ " ${station} " ]]; then
+ echo "That station is not available, check your typo ;)"
+exit
+fi
+
 stream=${stations[$1]}
 mplayer -playlist $stream
 
